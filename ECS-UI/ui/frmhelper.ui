@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmHelper</class>
+ <widget class="QDialog" name="frmHelper">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_title" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lab_Ico">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_Title">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>帮助</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_menu" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnMenu_Close">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>ArrowCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_main" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="plainText">
+         <string>    曾经有段时间，我有一个很执着的梦想，我要导演出一部空前绝后的句幕。不过现实无情地碾碎我的梦想，也同时将我推进了人生的低谷。
+    我开始思考，思想很多很多我以前总是回避的问题，在一次次思考中，我能感觉到我正在向一个陌生的地方走去，前途是光是暗也无法推测，我发现我在赌，赌注是一辈子的懊悔或是郁郁终生。
+    但当我看到阳光弥漫在我身边时，才发现以前的我是那么幼稚，我始终在找借口或不是借口的借口推卸掉与生俱来的责任，在光怪陆离的现实中午找个僻静的地方希望过云淡风轻的日子。我错了，我拥有足够的能力却不敢恣意妄为，我拥有惊人的天赋却畏惧这只是南柯一梦，或者这本来就是梦，醒来时却是了无痕迹和无休止的眷恋。
+从前有个同学问我是不是幻想过一些特别的经历会降临到自己身上。
+    当时我只笑了笑，却不知道该怎么回答。
+    我想我是矛盾的，我认为我的存在与否关系到世间的万事万物，但我找不到足够的证据来证明我具有救世主的身份。因此我一度怀疑过我是不是生不逢时，或是天妒英才。
+    我在一次次轮回中等待着一个机会，也许是乱世，也许是太平，我没有所谓的一技之长，只有飞扬跋扈的骄傲和潮洗潮卷的胸怀。只有一笑置之的孤傲和白云苍狗的方式。
+    我想我不该妄自菲薄，甚至这是理所当然的不加半点修饰的顺其自然。
+    我很喜欢这样一句话：如果我将庸碌一生的话，地球将停止转动，地球停止转动了吗？没有，那我将不会庸碌一生。
+在特定的时间，特定的环境，特定的地点，有个特定的人将主宰万事万物！
+    天生我才必有用！
+    经典的心照不宣，只可惜他的傲慢却没有足够的能力做基垫。
+    我想我是对的，注定的便是永远无法改变的，过去的只是匆匆一瞥，将来的只是白驹过隙，一次次的轮回换来的是麻木的循规蹈矩，所以世界需要那么一个人----改变。
+    过去亦空间空对月，茫茫鸿蒙无归处。
+    我如薏苡，为实。
+    众如佛珠，为空。
+    我为本，众为捧。
+    冥冥之间以无踪。</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

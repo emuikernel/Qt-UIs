@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/main.png</file>
+        <file>image/qt_zh_CN.qm</file>
+        <file>image/add.png</file>
+        <file>image/delete.png</file>
+        <file>image/update.png</file>
+        <file>image/excel.png</file>
+        <file>image/print.png</file>
+        <file>image/select.png</file>
+        <file>image/first.png</file>
+        <file>image/last.png</file>
+        <file>image/next.png</file>
+        <file>image/pre.png</file>
+        <file>image/close.png</file>
+        <file>image/login.png</file>
+        <file>image/input.png</file>
+        <file>image/move.png</file>
+        <file>image/btncheckoff.png</file>
+        <file>image/btncheckon.png</file>
+        <file>image/config.png</file>
+        <file>image/defence.png</file>
+        <file>image/bufang.png</file>
+        <file>image/chefang.png</file>
+        <file>image/sound.png</file>
+        <file>image/tree1.png</file>
+        <file>image/tree2.png</file>
+        <file>image/shadow_bottom.png</file>
+        <file>image/shadow_corner1.png</file>
+        <file>image/shadow_corner2.png</file>
+        <file>image/shadow_corner3.png</file>
+        <file>image/shadow_corner4.png</file>
+        <file>image/shadow_left.png</file>
+        <file>image/shadow_right.png</file>
+        <file>image/shadow_top.png</file>
+        <file>image/key.ico</file>
+        <file>image/banner.png</file>
+    </qresource>
+</RCC>

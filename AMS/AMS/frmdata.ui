@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmData</class>
+ <widget class="QDialog" name="frmData">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>941</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>警情查询</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="main.qrc">
+    <normaloff>:/image/main.png</normaloff>:/image/main.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+  </property>
+  <widget class="QGroupBox" name="gboxTop">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>921</width>
+     <height>85</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QCheckBox" name="ckUserName">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>47</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>操作员</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ckTriggerTime">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>时间</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labTimeEnd">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>47</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结束时间</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboxUserName">
+    <property name="geometry">
+     <rect>
+      <x>575</x>
+      <y>47</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboxTriggerContent">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateStart">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>yyyy年M月d日</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEnd">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>47</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>yyyy年M月d日</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboxTriggerType">
+    <property name="geometry">
+     <rect>
+      <x>575</x>
+      <y>10</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ckTriggerContent">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>内容</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ckTriggerType">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类型</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labTimeStart">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始时间</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSelect">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>查询(&amp;S)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/select.png</normaloff>:/image/select.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPrint">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>47</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>打印(&amp;P)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/print.png</normaloff>:/image/print.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>10</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>删除(&amp;D)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/delete.png</normaloff>:/image/delete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExcel">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>47</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>导出(&amp;E)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/excel.png</normaloff>:/image/excel.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboxDefenceName">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>47</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ckDefenceName">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>47</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>防区</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="gboxBottom">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>921</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnLast">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>10</y>
+      <width>120</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>末一页(&amp;L)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/last.png</normaloff>:/image/last.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNext">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>120</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>下一页(&amp;N)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/next.png</normaloff>:/image/next.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFirst">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>120</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>第一页(&amp;F)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/first.png</normaloff>:/image/first.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPre">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>120</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>上一页(&amp;M)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/image/pre.png</normaloff>:/image/pre.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labInfo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>共有 0 条数据   共 0 页   当前第 0 页</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableEvent">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>103</y>
+     <width>921</width>
+     <height>479</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>ckTriggerTime</tabstop>
+  <tabstop>dateStart</tabstop>
+  <tabstop>dateEnd</tabstop>
+  <tabstop>ckTriggerContent</tabstop>
+  <tabstop>cboxTriggerContent</tabstop>
+  <tabstop>ckTriggerType</tabstop>
+  <tabstop>cboxTriggerType</tabstop>
+  <tabstop>ckDefenceName</tabstop>
+  <tabstop>cboxDefenceName</tabstop>
+  <tabstop>ckUserName</tabstop>
+  <tabstop>cboxUserName</tabstop>
+  <tabstop>btnSelect</tabstop>
+  <tabstop>btnDelete</tabstop>
+  <tabstop>btnPrint</tabstop>
+  <tabstop>btnExcel</tabstop>
+  <tabstop>btnFirst</tabstop>
+  <tabstop>btnPre</tabstop>
+  <tabstop>btnNext</tabstop>
+  <tabstop>btnLast</tabstop>
+ </tabstops>
+ <resources>
+  <include location="main.qrc"/>
+ </resources>
+ <connections/>
+</ui>
